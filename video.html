@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Html Temel Yapısı </title>
+<meta charset= "UTF-8" >  <!-- türkçe yapar-->
+<meta name="description" content="Sıfırdan İleri Seviye Web Proglamlama Dersleri">
+<mate name= "keywords" content= "emrah yüksel, programlama, php">
+<meta name= "author" content= "width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- yorum satırı denemesi -->
+<p>
+        paragraf yazmak için 
+    </p>
+    
+    <h1> Başlık Etiketleri   </h1>
+    <h2> 2.Başlık   </h2>
+    
+    <p>
+        paragraf denemesi 2 
+        <br> <!-- alt satıra geçer -->
+        paragraf denemesi 3
+        <hr> <!-- çizgi etiketi-->
+        <b>kalın</b> yazı etiketi
+    
+    </p>
+    <big> daha büyük yazı etiketi</big>
+    <h3>
+        <small> daha küçük </small> yazı
+    </h3>
+    <p>
+        <i> italik yazı</i>
+    </p>
+    
+    <p> 
+        Alt indis yaratırım H<sub>2</sub>O <br>
+        Üst indis yaratırım 4<sup>3</sup>
+    </p>
+    
+    <!-- ins metnin altını çizme etiketi -->
+    <p> <ins> İns etiketi altını çizme </ins>  </p>
+    
+    <!-- del ve s üstünü çizme etiketi -->
+    <p> 
+        <del> üstü çizili yazar </del> <br>
+        <s> üstü çizili yazar</s>
+    </p>
+    <p>
+    Metin içinde belirli yerleri <code> kod yazı stiliyle </code> yazar.
+    </p>
+    
+    <!-- Tablo Etiketi -->
+    <table border ="2"> 
+        <tr> 
+    <th> 1.Kurs</th>
+    <th> 2.Kurs</th>
+        </tr>
+        <tr>        <!-- satır çoğaltmak için tr arttırın -->
+            <td width="150"> php kursu </td>
+            <td width="160"> html kursu </td>
+        </tr>
+    </table>
+    
+    <!-- ortalı yazma -->
+    
+    <center>
+        Ben Ortadayım
+    </center>
+
+    <!-- Sırasız Listeleme -->
+    <ul>
+        <li>Php Kursu</li>
+        <li>Bootstrap Kursu</li>
+        <li>Python Kursu</li>
+    </ul>
+    <!-- Sıralı Listeleme -->
+    <ol>
+            <li>Php Kursu</li>
+            <li>Bootstrap Kursu</li>
+            <li>Python Kursu</li>
+        </ol>
+    <!-- Tanımlama Etiketi -->
+        <dl>
+            <dt> Udemy Kursları </dt>
+            <dd> Udemy kursları Türkiyede en kaliteli içeriği bulabileceğiniz platformdur.</dd>
+        </dl>
+    <!-- img resim ekleme etketi-->
+    <img src="ae9a7111-8871-4911-8671-d97a5928bb56.jpg" alt="Berna Büyükada">
+    <!-- placeholder kolay resim ekleme -->
+    <br> 
+    <img src="ae9a7111-8871-4911-8671-d97a5928bb56.jpg">
+    <!-- iframe kullanımı -->
+    <br>
+    <iframe width="100%" height="300" src="file:///Users/ubit/Desktop/udemy%20video%20o%CC%88rnekleri/video.html"> </iframe>
+    
+    <!-- Form İşlemleri
+    action => formun gönderileceği alanıişaret eder.
+    method => POST ve GET                            -->
+    <br> <br>
+    <form action="" method="GET">  <!-- tırnak içine adres gelicek, getten sonra target="_blank yazarsan butona basınca yeni sayfa açar -->
+    <br><br>
+    Text Type <input type="text" name=""> <br><br> <!-- yazı -->
+    Mail Type <input type="email" name=""> <br><br> <!-- mail fotmatında -->
+    Number Type <input type="number" name=""> <br><br> <!-- sadece sayı -->
+    Password Type <input type="password" name=""> <br><br> <!-- şifreli yazar -->
+    Radio Type <input type="radio" name=""> <br><br> <!-- radio (tek seçenekli) -->
+    Checkbox Type <input type="checkbox" name=""> <br><br> <!-- checkbox (birden fazla seçenekli) -->
+    File Type <input type="file" multiple="" name=""> <br><br> <!-- dosya seçme -->
+   
+
+    Value <input type="text" name="texttype" value="Berna Büyükada"> <br><br> <!-- daha önce yazılanı yazar -->
+    Placeholder <input type="text" name="texttype" placeholder="Adınızı Giriniz."> <br><br> <!-- ne yapacağın yazar -->
+    Required <input type="text" name="texttype" placeholder="Adınızı Giriniz." required=""> <br><br> <!-- doldurmadan geçilmez -->
+    ReadOnly <input type="text" name="texttype" placeholder="Adınızı Giriniz." readonly=""> <br><br> <!-- sadece okunailir, yazılamaz -->
+    Disabled <input type="text" name="texttype" placeholder="Adınızı Giriniz." disabled=""> <br><br> <!-- koyu renk ev yazılamaz (çalışmadı) -->
+
+    Text Type <input style="width: 500px;" type="text" name=""> <br><br> <!-- yazı yazma yerini uzatır -->
+    Max Min<input type="number" name="texttype" max="5"> <br><br> <!-- 5ten fazla değer girilemez -->
+    Max Min<input type="number" name="texttype" min="1"> <br><br> <!-- 1den az değer girilemez -->
+    Mail Type <input type="email" name="" autocomplete="off"> <br><br> <!-- daha önce girilenleri göstermez -->
+    Required <input type="text" name="texttype" autofocus="" placeholder="Adınızı Giriniz." required=""> <br><br> <!-- autofocus yazılan açılınca zaman odaklı -->
+    Step <input type="number" name="texttype" step="5"> <br><br> <!-- 5er 5er atlar -->
+
+    Textarea <textarea rows="10" cols="60"></textarea> <br><br> <!-- metin kutusu, row satır cols kolon sayısı, metin yazacaksanız textarea elementleri arasına dierkt yazın, placeholder çalışır-->
+    Selectbox <select> <!-- seçim yapma kutusu -->
+        <option> Seçim yapınız </option>
+        <option> Php kursu </option>
+        <option> Java kursu </option>
+        <option selected=""> HTML kursu </option> <!-- başlangıçta seçili gelir -->
+    </select> <br><br>
+
+    Submit Type <input type="submit" value="Formu gönder" name=""> <br><br> <!-- buton -->
+
+</form>
+
+    <!-- LİNK VERME ETİKETİ -->
+    <a href="https://www.udemy.com" target="_blank">Udemy Kurslarına Git </a> <!-- target blank olduğu için yeni sayfada açar-->
+    <br>
+    <a href="https://www.udemy.com"> <img src="ae9a7111-8871-4911-8671-d97a5928bb56.jpg" alt="Berna Büyükada"></a> <!-- fotoğrafa tıklandığında udemy sayfasını açar-->
+    <br>
+    <a href="javascript:void(0)"> <img src="ae9a7111-8871-4911-8671-d97a5928bb56.jpg" alt="Berna Büyükada"></a> <!-- fotoğrafa link verilse de tıklayınca açmaz-->
+    <br>
+    
+</body>
+</html>
+
