@@ -107,11 +107,64 @@ echo "$numara1 / $numara2 = $topla";
 echo "<hr>";
 ?>
 
+<?php
+//Atama İşlemleri
+$atama=400;
+echo "atama değişkeninin değeri : ". $atama;
+echo "<br>";
+
+$atama += 500;
+echo "atama değişkeninin değeri : ". $atama;
+echo "<br>";
+
+$atama -= 500;
+echo "atama değişkeninin değeri : ". $atama;
+echo "<br>";
+
+$atama /= 8;
+echo "atama değişkeninin değeri : ". $atama;
+echo "<br>";
+
+$atama *= 6;
+echo "atama değişkeninin değeri : ". $atama;
+echo "<br>";
 
 
+//Arttırma ve Eksiltme Operatörleri
+$atama++;  //arttırma
+echo "atama değişkeninin değeri : ". $atama;
+echo "<br>";
+
+$atama--;  //eksiltme
+echo "atama değişkeninin değeri : ". $atama;
+echo "<br>";
 
 
+//Hazır fonksiyonlar/rand sayı üretme fonksiyonu
+echo $sayi=rand(0,10); echo "<br>";
+if($sayi>=5)
+{
+    echo "kazandın";
+}
+else
+{
+    echo "kaybettin";
+}
 
+
+// "Çift tırnak ve ' Tek Tırnak Farkı
+echo "<br>";
+$ad="Berna";
+$soyad="Büyükada";
+ echo "Benim adım $ad";
+ echo "<br>";
+ echo 'Benim adım $ad';  //tek tırnak içine deişken yazılmaz.
+
+
+//Yoksayma işaretleri
+echo "<br>"; echo "<br>";
+echo "Ben $ad \"Udemy\" Kursuna Kayıt Oldum";
+?>
 
 </body>
 </html>
